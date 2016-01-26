@@ -16,6 +16,7 @@ server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
 
+// TODO move all of above to helpers.js
 function normalizePort(val) {
     var port = parseInt(val, 10);
 
