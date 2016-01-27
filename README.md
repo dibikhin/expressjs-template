@@ -1,16 +1,20 @@
-# ExpressJS project template
+# Node.js + Express.js + Mongoose
 
-Just to not create it manually everytime.
+Express-based boilerplate for web app.
+NPM-only, no other automation used.
 
-I use:
+In use:
 - Express
 - Mocha
 - Should
+- Mongoose
 
 TODO:
-- Mongoose
 - Winston
 - Istanbul
 - Sinon?
 - JSHint
 - Reloader
+- Editor's conf
+- Errors
+- Logging
