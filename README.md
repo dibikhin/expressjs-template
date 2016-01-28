@@ -1,19 +1,37 @@
 # Node.js + Express.js + Mongoose
 
-Express-based boilerplate for web app.
+Express-based boilerplate webapp's backend.
+
 NPM-only, no other automation used.
 
-In use:
+## Install
+
+npm install
+
+## Test
+
+npm test
+
+## Run
+
+npm start
+
+## Configs
+- TBD Mongo
+
+## In use
 - Express
 - Mocha
 - Should
 - Mongoose
+- JSHint
 
-TODO:
+## Dir structure
+
+## TODO
 - Winston
 - Istanbul
 - Sinon?
-- JSHint
 - Reloader
 - Editor's conf
 - Errors

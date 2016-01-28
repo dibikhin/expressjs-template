@@ -2,9 +2,7 @@ var _ = require('underscore');
 
 function do_work(params, callback) {
     params = params || {};
-    callback = _.isFunction(callback)
-        ? callback
-        : _.noop;
+    callback = _.isFunction(callback) ? callback : _.noop;
 
     if (!is_valid(params)) {
         return callback('some error');
@@ -19,9 +17,8 @@ module.exports = {
 
 // TODO use validation lib or something
 function is_valid(params) {
-    if (!params.from || !params.to
-        || !_.isObject(params)
-        || !_.isString(params.from) || !_.isString(params.to)) {
+    if (!params.from || !params.to ||
+        !_.isObject(params) || !_.isString(params.from) || !_.isString(params.to)) {
         return false;
     }
     return true;

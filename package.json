@@ -1,9 +1,11 @@
 {
-  "name": "nodejs-template",
+  "name": "expressjs-template",
   "version": "0.0.0",
   "private": true,
+  "license": "MIT",
+  "author": "Roman Dibikhin",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/jshint/bin/jshint ./ --exclude node_modules && ./node_modules/mocha/bin/mocha"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -14,6 +16,7 @@
     "underscore": "^1.8.3"
   },
   "devDependencies": {
+    "jshint": "^2.9.1",
     "mocha": "^2.3.4",
     "should": "^8.2.0",
     "sinon": "^1.17.2"

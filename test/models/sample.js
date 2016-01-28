@@ -1,6 +1,5 @@
 var should = require('should');
 var sinon = require('sinon');
-var _ = require('underscore');
 
 // TODO better path access https://gist.github.com/branneman/8048520
 var sample_module = require('../../domain/sample');
@@ -14,7 +13,7 @@ describe('Sample module', function () {
 
         // Common validation
         it('should exist', function () {
-            sample_module.do_work.should.be.ok();
+            should(sample_module.do_work).be.ok();
         });
 
         it('should be a Function', function () {

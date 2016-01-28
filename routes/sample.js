@@ -1,6 +1,6 @@
 var Cat = require('../models/cat');
 
-function get(req, res, next) {
+function get(req, res) { //, next) {
     var kitty = new Cat({
         name: 'Qwerty'
     });
@@ -14,7 +14,7 @@ function get(req, res, next) {
     });
 }
 
-function post(req, res, next) {
+function post(req, res) { //, next) {
     var kitty = new Cat({
         name: 'Qwerty'
     });

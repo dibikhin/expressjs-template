@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/routes');
 var sample = require('./routes/sample');
+var middleware = require('./infra/middleware');
 
 var app = express();
 
@@ -26,32 +27,10 @@ app.use(function (req, res, next) {
 });
 
 // error handlers
-// TODO move 'em to a file
-
-// development error handler
-// will print stacktrace
 if (app.get('env') === 'development') {
-    app.use(function (err, req, res, next) {
-        res.status(err.status || 500);
-        res.json({
-            'error': {
-                message: err.message,
-                error: err
-            }
-        });
-    });
+    app.use(middleware.dev_handle_error);
 }
 
-// production error handler
-// no stacktraces leaked to user
-app.use(function (err, req, res, next) {
-    res.status(err.status || 500);
-    res.json({
-        'error': {
-            message: err.message,
-            error: err
-        }
-    });
-});
+app.use(middleware.prod_handle_error);
 
 module.exports = app;
