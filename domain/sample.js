@@ -1,13 +1,18 @@
+"use strict";
+
 var _ = require('underscore');
 
 function do_work(params, callback) {
     params = params || {};
     callback = _.isFunction(callback) ? callback : _.noop;
 
+    var result;
+
     if (!is_valid(params)) {
         return callback('some error');
     }
-    var result = params.from + ' to ' + params.to;
+
+    result = params.from + ' to ' + params.to;
     return callback(null, result);
 }
 

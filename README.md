@@ -6,15 +6,19 @@ NPM-only, no other automation used.
 
 ## Install
 
-npm install
+`npm install`
 
 ## Test
 
-npm test
+`npm test`
 
-## Run
+## Start
 
-npm start
+`npm start`
+
+## Coverage
+
+`npm run cover`
 
 ## Configs
 - TBD Mongo
@@ -23,16 +27,32 @@ npm start
 - Express
 - Mocha
 - Should
+- Sinon
 - Mongoose
 - JSHint
 
-## Dir structure
+## Folders
+```
+.
+|--db
+|--domain
+|--infra
+|--models
+|--routes
+└--test
+    └--models
+```
 
 ## TODO
 - Winston
+- Passport
+- ACL (rbac?)
 - Istanbul
-- Sinon?
 - Reloader
 - Editor's conf
 - Errors
 - Logging
+- Configs
+- Object validation?
+- Code contracts?
+- ENV switch
