@@ -4,34 +4,36 @@ Express-based boilerplate webapp's backend.
 
 NPM-only, no other automation used.
 
-## Install
+### Install
 
 `npm install`
 
-## Test
+### Test
 
 `npm test`
 
-## Start
+### Start
 
 `npm start`
 
-## Coverage
+### Coverage
 
 `npm run cover`
 
-## Configs
+### Configs
 - TBD Mongo
 
-## In use
+### In use
 - Express
 - Mocha
 - Should
 - Sinon
 - Mongoose
 - JSHint
+- Istanbul
+- Supertest
 
-## Folders
+### Folders
 ```
 .
 |--db
@@ -40,19 +42,18 @@ NPM-only, no other automation used.
 |--models
 |--routes
 └--test
-    └--models
+    └--domain
 ```
 
-## TODO
-- Winston
-- Passport
+### TODO
+- Module loader (avoiding '../../../...')
+- Logging (Winston?)
+- Authentication (Passport?)
 - ACL (rbac?)
-- Istanbul
 - Reloader
-- Editor's conf
-- Errors
-- Logging
 - Configs
+- Errors
 - Object validation?
-- Code contracts?
 - ENV switch
+- Editor's conf
+- Code contracts?

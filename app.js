@@ -30,7 +30,6 @@ app.use(function (req, res, next) {
 if (app.get('env') === 'development') {
     app.use(middleware.dev_handle_error);
 }
-
 app.use(middleware.prod_handle_error);
 
 module.exports = app;
