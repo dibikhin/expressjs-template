@@ -5,10 +5,11 @@
   "license": "MIT",
   "author": "Roman Dibikhin",
   "scripts": {
-    "test": "./node_modules/.bin/jshint ./ --exclude-path .gitignore && ./node_modules/.bin/_mocha",
-    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
+    "test": "./node_modules/.bin/jshint ./ --exclude-path .gitignore && NODE_PATH=. ./node_modules/.bin/_mocha",
+    "cover": "NODE_PATH=. ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
   },
   "dependencies": {
+    "app-module-path": "^1.0.5",
     "body-parser": "~1.13.2",
     "debug": "~2.2.0",
     "express": "~4.13.1",

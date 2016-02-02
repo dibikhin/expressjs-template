@@ -6,8 +6,8 @@
 var debug = require('debug')('expressjs-template:server');
 var http = require('http');
 
-var app = require('./app');
-var helpers = require('./infra/helpers');
+var app = require('app');
+var helpers = require('infra/helpers');
 
 var port = helpers.normalizePort(process.env.PORT || '3000');
 app.set('port', port);
@@ -18,7 +18,6 @@ server.listen(port);
 server.on('error', helpers.onError);
 server.on('listening', onListening);
 
-// TODO move all of above to helpers.js
 function onListening() {
     var addr = server.address();
     var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;

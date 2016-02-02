@@ -32,6 +32,7 @@ NPM-only, no other automation used.
 - JSHint
 - Istanbul
 - Supertest
+- Modules loaded w/ NODE_PATH=.
 
 ### Folders
 ```
@@ -46,13 +47,13 @@ NPM-only, no other automation used.
 ```
 
 ### TODO
-- Module loader (avoiding '../../../...')
 - Logging (Winston?)
 - Authentication (Passport?)
 - ACL (rbac?)
 - Reloader
 - Configs
 - Errors
+- Socket.io
 - Object validation?
 - ENV switch
 - Editor's conf

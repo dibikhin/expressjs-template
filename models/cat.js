@@ -1,4 +1,4 @@
-var db = require('../db/mongodb');
+var db = require('db/mongodb');
 
 var Cat = db.model('Cat', {
     name: {

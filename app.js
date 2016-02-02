@@ -4,16 +4,15 @@ var express = require('express');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/routes');
-var sample = require('./routes/sample');
-var middleware = require('./infra/middleware');
+var routes = require('routes/routes');
+var sample = require('routes/sample');
+var middleware = require('infra/middleware');
 
 var app = express();
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
 
-// TODO '/smoketest' w/ supertest
 var handlers = {
     sample: sample
 };

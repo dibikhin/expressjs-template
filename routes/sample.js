@@ -1,4 +1,4 @@
-var Cat = require('../models/cat');
+var Cat = require('models/cat');
 
 function get(req, res, next) {
     Cat.findOne({ '_id': '56afd024edbfb75273384831' }, 'name', function (err, kitty) {
