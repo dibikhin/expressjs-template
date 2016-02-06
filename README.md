@@ -1,6 +1,6 @@
 # Node.js + Express.js + Mongoose
 
-Express-based boilerplate webapp's backend.
+Express-based boilerplate for a webapp's backend.
 
 NPM-only, no other automation used.
 
@@ -35,29 +35,35 @@ NPM-only, no other automation used.
     └--domain
 ```
 
-### In use
+## In use
 - Express
+- Mongoose
+- Underscore
+- Modules loaded w/ NODE_PATH=.
+- Sriracha Admin
+
+### For QA
 - Mocha
 - Should
 - Sinon
-- Underscore
-- Mongoose
 - JSHint
 - Istanbul
 - Supertest
-- Modules loaded w/ NODE_PATH=.
-- Sriracha Admin
+- node-yaml-config
 
 ### TODO
 - Logging (Winston?)
 - Authentication (Passport?)
 - ACL (rbac?)
 - Reloader
-- Configs
 - Errors
 - Socket.io
 - Static files
 - Lower JSHint 'maxcomplexity'
+- "use strict"; everywhere
+- Run with NODE_ENV=development
+- Fix warnings after start
+- Refactor magic numbers
 - File upload
 - Pre-commit hook?
 - More JSHint rules

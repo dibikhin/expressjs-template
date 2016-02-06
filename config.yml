@@ -1,0 +1,7 @@
+default:
+  port: '3000'
+  db_url: mongodb://testuser:testpass@ds039311.mongolab.com:39311/heroku_app35034272
+development:
+  db_url: mongodb://testuser:testpass@ds039311.mongolab.com:39311/heroku_app35034272
+production:
+  db_url: mongodb://testuser:testpass@ds039311.mongolab.com:39311/heroku_app35034272

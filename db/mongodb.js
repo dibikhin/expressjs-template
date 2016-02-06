@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
+var config = require('infra/config');
 
-// TODO move to config
-mongoose.connect('mongodb://testuser:testpass@ds039311.mongolab.com:39311/heroku_app35034272');
+mongoose.connect(config.db_url);
 
 module.exports = mongoose;

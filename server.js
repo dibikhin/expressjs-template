@@ -8,8 +8,10 @@ var http = require('http');
 
 var app = require('app');
 var helpers = require('infra/helpers');
+var config = require('infra/config');
 
-var port = helpers.normalizePort(process.env.PORT || '3000');
+var port = helpers.normalizePort(process.env.PORT || config.port);
+console.log(port);
 app.set('port', port);
 
 var server = http.createServer(app);
@@ -20,6 +22,6 @@ server.on('listening', onListening);
 
 function onListening() {
     var addr = server.address();
-    var bind = helpers.determine_bind(addr);
+    var bind = helpers.determine_bind(addr.port);
     debug('Listening on ' + bind);
 }
