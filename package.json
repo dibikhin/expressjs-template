@@ -5,14 +5,15 @@
   "license": "MIT",
   "author": "Roman Dibikhin",
   "scripts": {
+    "start": "NODE_PATH=. DEBUG=expressjs-template:* node server.js",
     "test": "./node_modules/.bin/jshint ./ --exclude-path .gitignore && NODE_PATH=. ./node_modules/.bin/_mocha",
     "cover": "NODE_PATH=. ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
   },
   "dependencies": {
-    "app-module-path": "^1.0.5",
     "body-parser": "~1.13.2",
     "debug": "~2.2.0",
     "express": "~4.13.1",
+    "jade": "^1.11.0",
     "mongoose": "^4.3.7",
     "morgan": "~1.6.1",
     "underscore": "^1.8.3"
@@ -23,6 +24,7 @@
     "mocha": "^2.3.4",
     "should": "^8.2.0",
     "sinon": "^1.17.2",
+    "sriracha-admin": "0.0.3",
     "supertest": "^1.1.0"
   }
 }

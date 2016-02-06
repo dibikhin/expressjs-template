@@ -23,17 +23,6 @@ NPM-only, no other automation used.
 ### Configs
 - TBD Mongo
 
-### In use
-- Express
-- Mocha
-- Should
-- Sinon
-- Mongoose
-- JSHint
-- Istanbul
-- Supertest
-- Modules loaded w/ NODE_PATH=.
-
 ### Folders
 ```
 .
@@ -46,6 +35,19 @@ NPM-only, no other automation used.
     └--domain
 ```
 
+### In use
+- Express
+- Mocha
+- Should
+- Sinon
+- Underscore
+- Mongoose
+- JSHint
+- Istanbul
+- Supertest
+- Modules loaded w/ NODE_PATH=.
+- Sriracha Admin
+
 ### TODO
 - Logging (Winston?)
 - Authentication (Passport?)
@@ -54,6 +56,11 @@ NPM-only, no other automation used.
 - Configs
 - Errors
 - Socket.io
+- Static files
+- Lower JSHint 'maxcomplexity'
+- File upload
+- Pre-commit hook?
+- More JSHint rules
 - Object validation?
 - ENV switch
 - Editor's conf

@@ -20,6 +20,6 @@ server.on('listening', onListening);
 
 function onListening() {
     var addr = server.address();
-    var bind = typeof addr === 'string' ? 'pipe ' + addr : 'port ' + addr.port;
+    var bind = helpers.determine_bind(addr);
     debug('Listening on ' + bind);
 }

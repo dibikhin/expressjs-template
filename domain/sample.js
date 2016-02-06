@@ -16,9 +16,6 @@ function do_work(params, callback) {
     return callback(null, result);
 }
 
-module.exports = {
-    do_work: do_work
-};
 
 // TODO use validation lib or something
 function is_valid(params) {
@@ -28,3 +25,7 @@ function is_valid(params) {
     }
     return true;
 }
+
+module.exports = {
+    do_work: do_work
+};

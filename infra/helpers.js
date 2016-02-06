@@ -20,8 +20,7 @@ function onError(error) {
     }
 
     var port = normalizePort(process.env.PORT || '3000');
-
-    var bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+    var bind = determine_bind(port);
 
     switch (error.code) {
         case 'EACCES':
@@ -37,7 +36,12 @@ function onError(error) {
     }
 }
 
+function determine_bind(port) {
+    return typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+}
+
 module.exports = {
     normalizePort: normalizePort,
-    onError: onError
+    onError: onError,
+    determine_bind: determine_bind
 };

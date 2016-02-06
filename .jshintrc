@@ -2,6 +2,13 @@
     "node": true,
     "undef": true,
     "unused": true,
+    "bitwise": true,
+    "eqeqeq": true,
+    "freeze": true,
+    "maxcomplexity": 7,
+    "maxdepth": 2,
+    "maxparams": 3,
+    "plusplus": true,
     "predef": [
         "describe",
         "context",
