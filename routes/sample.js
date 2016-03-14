@@ -1,7 +1,8 @@
 var Cat = require('models/cat');
 
 function get(req, res, next) {
-    Cat.findOne({ '_id': '56a906f146da72802e1be5cd' }, 'name', function (err, kitty) {
+    var query = { '_id': '56a906f146da72802e1be5cd' };
+    Cat.findOne(query, 'name', function (err, kitty) {
         if (err) return next(err);
         res.json(kitty);
     });

@@ -21,7 +21,7 @@ NPM-only, no other automation used.
 `npm run cover`
 
 ### Configs
-- TBD Mongo
+`config.yml`
 
 ### Folders
 ```
@@ -41,6 +41,7 @@ NPM-only, no other automation used.
 - Underscore
 - Modules loaded w/ NODE_PATH=.
 - Sriracha Admin
+- node-yaml-config (hierarchical configs)
 
 ### For QA
 - Mocha
@@ -49,9 +50,8 @@ NPM-only, no other automation used.
 - JSHint
 - Istanbul
 - Supertest
-- node-yaml-config
 
-### TODO
+## TODO
 - Logging (Winston?)
 - Authentication (Passport?)
 - ACL (rbac?)
@@ -64,10 +64,12 @@ NPM-only, no other automation used.
 - Run with NODE_ENV=development
 - Fix warnings after start
 - Refactor magic numbers
+- DI
 - File upload
 - Pre-commit hook?
 - More JSHint rules
 - Object validation?
+- JSCS
 - ENV switch
 - Editor's conf
 - Code contracts?

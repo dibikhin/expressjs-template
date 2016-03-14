@@ -8,7 +8,7 @@ function do_work(params, callback) {
 
     var result;
 
-    if (!is_valid(params)) {
+    if (!_is_valid(params)) {
         return callback('some error');
     }
 
@@ -18,7 +18,7 @@ function do_work(params, callback) {
 
 
 // TODO use validation lib or something
-function is_valid(params) {
+function _is_valid(params) {
     if (!params.from || !params.to ||
         !_.isObject(params) || !_.isString(params.from) || !_.isString(params.to)) {
         return false;
