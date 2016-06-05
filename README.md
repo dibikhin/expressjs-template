@@ -61,7 +61,7 @@ NPM-only, no other automation used.
 - Static files
 - Lower JSHint 'maxcomplexity'
 - "use strict"; everywhere
-- Run with NODE_ENV=development
+- Run with NODE_ENV=development, ENV switch
 - Fix warnings after start
 - Refactor magic numbers
 - DI
@@ -70,6 +70,8 @@ NPM-only, no other automation used.
 - More JSHint rules
 - Object validation?
 - JSCS
-- ENV switch
+- Mediator? Plugins? Layers?
+- Non-UI client code?
+- Audit (storing changes), event sourcing?
 - Editor's conf
 - Code contracts?

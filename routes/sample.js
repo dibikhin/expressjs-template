@@ -22,6 +22,7 @@ function post(req, res) { //, next) {
     });
 }
 
+// TODO move to the beginning
 module.exports = {
     get: get,
     post: post

@@ -1,17 +1,18 @@
 {
-    "node": true,
-    "undef": true,
-    "unused": true,
     "bitwise": true,
     "eqeqeq": true,
     "freeze": true,
+    "latedef": "nofunc",
     "maxcomplexity": 7,
     "maxdepth": 2,
     "maxparams": 3,
+    "node": true,
     "plusplus": true,
     "predef": [
         "describe",
         "context",
         "it"
-    ]
+    ],
+    "undef": true,
+    "unused": true
 }
